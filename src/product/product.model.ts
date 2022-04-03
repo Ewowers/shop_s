@@ -5,8 +5,8 @@ export type ProductDocument = Product & Document;
 
 @Schema()
 export class Product {
-  @Prop({ type: Object })
-  image: any;
+  @Prop()
+  image: string; //картинка товара
   @Prop()
   title: string; //название товара
   @Prop()
